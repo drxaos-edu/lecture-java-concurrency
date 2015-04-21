@@ -7,10 +7,10 @@ class Incremenator2 extends Thread {
         do {
             if (!Thread.interrupted())    //Проверка прерывания
             {
-                Ex22Interrupt.mValue++;    //Инкремент
+                Ex22Interrupt1.mValue++;    //Инкремент
 
                 //Вывод текущего значения переменной
-                System.out.print(Ex22Interrupt.mValue + " ");
+                System.out.print(Ex22Interrupt1.mValue + " ");
             } else {
                 return;        //Завершение потока
             }
@@ -25,7 +25,7 @@ class Incremenator2 extends Thread {
     }
 }
 
-public class Ex22Interrupt {
+public class Ex22Interrupt1 {
 
     //Переменая, которой оперирует инкременатор
     public static int mValue = 0;
