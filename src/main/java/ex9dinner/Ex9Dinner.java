@@ -70,6 +70,7 @@ class Philosopher implements Runnable {
         }
     }
 
+// ######## Start Strategy #########
     static volatile ReentrantLock[] locks = new ReentrantLock[5];
 
     static {
@@ -95,6 +96,8 @@ class Philosopher implements Runnable {
         locks[fork1.number].unlock();
         locks[fork2.number].unlock();
     }
+// ######## End Strategy #########
+
 }
 
 public class Ex9Dinner {
